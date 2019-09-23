@@ -22,7 +22,13 @@ const config = {
     }
   },
   sidebar: {
-    forcedNavOrder: ["/introduction", "/testing-background"],
+    forcedNavOrder: [
+      "/introduction",
+      "/testing-background",
+      "/testing-react-apps",
+      "/testing-react-wordpress-blocks",
+      "/about"
+    ],
     links: [
       { text: "Josh", link: "https://JoshPress.net" },
       { text: "Saturday Drive", link: "https://saturdaydrive.io" }

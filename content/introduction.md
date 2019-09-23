@@ -1,5 +1,5 @@
 ---
-title: "JavaScript Testing In And Around WordPress"
+title: "Introduction"
 metaTitle: "Introduction"
 metaDescription: "desc"
 ---
