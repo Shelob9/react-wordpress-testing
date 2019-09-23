@@ -1,32 +1,22 @@
 ---
-title: "Introduction"
-metaTitle: "This is the title tag of this page"
-metaDescription: "This is the meta description"
+title: "JavaScript Testing In And Around WordPress"
+metaTitle: "Introduction"
+metaDescription: "desc"
 ---
 
-Some introduction text. Lists out all the headings from h1 to h6. Easy to customise.
+## What Is Inside
 
-# Heading H1
-Heading 1 text
+In the first part, I'll show you how to test a React app. The app itself is super basic, and has a single feature. React is atomic. You can use this mini-app or its components in a larger app. For example a WordPress block. That's part two, I'll show how to use re-usable React components in a WordPress block.
 
-## Heading H2
-Heading 2 text
+Also, I have background on testing in React and
 
-### Heading H3
-Heading 3 text
+## Assumptions About You
 
-#### Heading H4
-Heading 4 text
+It's important as you consume this material to know what assumptions I'm making about you.
 
-##### Heading H5
-Heading 5 text
-
-###### Heading H6
-Heading 6 text
-
-## Lists
-- Item 1
-- Item 2
-- Item 3
-- Item 4
-- Item 5
+- You know React basics. If not, I recommend:
+  - The [React Getting Started Guide](https://reactjs.org/docs/getting-started.html).
+  - [This section](https://fullstackopen.com/en/part2) of [The University of Helsinki's Free Intro Course on Modern JavaScript-based Web Development](https://fullstackopen.com/).
+- How to create a "Gutenberg" block in WordPress.
+- You can read the docs.
+  - I am going to be covering a lot of tools. I'll show how to get started with them and expalin WHY you would use them. I trust that you can discover the little details and next steps from reading the docs and considering what your code needs.
