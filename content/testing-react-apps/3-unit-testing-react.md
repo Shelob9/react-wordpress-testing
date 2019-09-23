@@ -4,15 +4,17 @@ metaTitle: "Background"
 metaDescription: "desc"
 ---
 
+Words before
+
+## Unit Testing React Components With React Test Renderer
+
 ### Install React Test Renderer
 
 ```bash
 yarn add react-test-renderer
 ```
 
-### Unit Testing React Components
-
-#### Find Props
+### Find Props
 
 ```jsx
 //DO NOT test like this.
@@ -30,9 +32,7 @@ test("Component renders value", () => {
 
 FALSE. **That Is Testing React, Not Your Application**
 
----
-
-#### Snapshot Testing
+### Snapshot Testing
 
 Snapshots acomplish two things:
 
@@ -61,3 +61,82 @@ test("Component renders correctly", () => {
 
 This is less code, and it uses the component in the same way we will use it in the actual app. Unit tests are always contrived, but the more that reflects how the component is used, the more valuable the test.
 
+## Unit Testing React Apps With React Testing Library
+
+### Testing Events
+
+React testing library is best for this. Enzyme is an alternative.
+
+```bash
+yarn add @testing-library/react
+```
+
+---
+
+#### Test On Change Event
+
+```jsx
+import { render, cleanup, fireEvent } from "@testing-library/react";
+describe("EditValue component", () => {
+  afterEach(cleanup); //reset JSDOM after each test
+  it("Calls the onchange function", () => {
+    //put test here
+  });
+  it("Has the right value", () => {
+    //put test here
+  });
+});
+```
+
+aaa
+
+```jsx
+const onChange = jest.fn();
+const { getByTestId } = render(
+  <EditValue
+    onChange={onChange}
+    value={""}
+    id={"input-test"}
+    className={"some-class"}
+  />
+);
+fireEvent.change(getByTestId("input-test"), {
+  target: { value: "New Value" }
+});
+expect(onChange).toHaveBeenCalledTimes(1);
+```
+
+sdfsdfsdsdf
+
+```jsx
+const onChange = jest.fn();
+const { getByTestId } = render(
+  <EditValue
+    onChange={onChange}
+    value={""}
+    id={"input-test"}
+    className={"some-class"}
+  />
+);
+fireEvent.change(getByTestId("input-test"), {
+  target: { value: "New Value" }
+});
+expect(onChange).toHaveBeenCalledWith("New Value");
+```
+
+### Snapshot Testing With React Testing Library
+
+```jsx
+test("matches snapshot", () => {
+  expect(
+    render(
+      <EditValue
+        onChange={jest.fn()}
+        value={"Hi Roy"}
+        id={"some-id"}
+        className={"some-class"}
+      />
+    )
+  ).toMatchSnapshot();
+});
+```
