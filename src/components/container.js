@@ -1,5 +1,4 @@
 import system from "system-components/emotion";
-
 const Container = system(
   {
     is: "div",
