@@ -82,3 +82,54 @@ For editing the value:
 import React from "react";
 export const EditValue = props => null;
 ```
+
+### Step Two: Incomplete Tests
+
+Go ahead and commit those components. Then, let's create test files that explain **what** we will test. This will show us how the syntax of tests work.
+
+#### The test() Syntax
+
+All tests must be wrapped in a closure. We use a test function whose first argument is a string describing the test, and the second is a closure wrapping one or more tests. The simplest way to do this is to wrap each test with the `test()` function.
+
+Create a file `DisplayValue.test.js` in the same directory. Jest is configured to look in `/src` for files that end with `.test.js` or `test.jsx`.
+
+```jsx
+// src/components/DisplayValue.js
+
+//Import React
+import React from "react";
+//Import test renderer
+import TestRenderer from "react-test-renderer";
+//Import component to test
+import { DisplayValue } from "./DisplayValue";
+
+test("Component renders value", () => {});
+
+test("Component has supplied class name", () => {});
+```
+
+In this snippet, first, all of the relevant dependencies are included. Then we write out **what** we want these tests to prove. The first test answers the question "does the compoennt show the value?" The second test answers as question about the className prop.
+
+This syntax is pretty declarative, and it does not reflect how the program is used.
+
+#### BDD Style
+
+For the edit component, let's use BDD syntax to describe how the program is used. Create `src/components/EditValue.test.js`. I'm skipping the imports here, they are the same as before, with a diffent component being imported.
+
+Notice that we use `describe()` to group our tests, and `it()` to describe what it -- our component -- does:
+
+```jsx
+describe("EditValue Component", () => {
+  it("Has the supplied value in the input", () => {});
+
+  it("Passes string to onChange when changed", () => {});
+});
+```
+
+These tests answe the questions we asked about the intial state and the reaction to a change event we are concerned with.
+
+### Step 3: Write Failing Tests
+
+Now you will need to write tests that prove that your components do **not** work. These tests should pass when the components work.
+
+Next section!
