@@ -1,7 +1,7 @@
 ---
 title: "Unit Testing React Apps"
-metaTitle: "Background"
-metaDescription: "desc"
+metaTitle: "Unit Testing React"
+metaDescription: "Unit testing React apps with Jest, React Test Renderer and React Testing Library"
 ---
 
 Words before
@@ -63,71 +63,113 @@ This is less code, and it uses the component in the same way we will use it in t
 
 ## Unit Testing React Apps With React Testing Library
 
-### Testing Events
+Our `<EditValue />` component will be provided a value and a function that fires when that value is changed and returns the new value.
 
-React testing library is best for this. Enzyme is an alternative.
+### Testing React Events
+
+We could use React Test Render's `act()` function for these tests. Instead, we'll use a higher-level tool tool that takes away most of the complexity of interacting with rendered React components. We'll use [React Testing Library](https://testing-library.com/docs/react-testing-library/intro). Testing Library's React implimentation allows us to select nodes from the rendered app, like a user would, and make assertions about them or take actions, such as fireing change events, with them.
+
+#### Install React Testing Library
 
 ```bash
 yarn add @testing-library/react
 ```
 
----
+#### Testing Change Events With React Testing Library
 
-#### Test On Change Event
+We can [use React Testing Libraray to test change events](https://github.com/testing-library/testing-library-docs/pull/138#issuecomment-499571797) in the `<EditValue />` component. In these tests, instead of passing a real change handler, we will use [Jest's mock](https://jestjs.io/docs/en/mock-functions) function instead.
+
+[`jest.fn()`](https://jestjs.io/docs/en/mock-functions) are useful helpers for testing if the component interacted with the onChange function correctly. Like all mocks, they help isolate components during unit testing. Later in integration tests, we will make sure that the real onChange function behaves accordingly. Using Jest's mock utility, we [can learn about how the function was called](https://jestjs.io/docs/en/mock-functions#mock-property). That's what our unit test is concerned with -- how the unit being tested uses the callback. We are not concerned with what the callback does in this test. That's a seperate unit of functionality.
+
+#### Setting Up Tests With React Testing Library
+
+Let's look at how to setup our tests for `<EditValue>` with React testing library. We're still using the BDD-style with nesting from the last time we looked at this test file. Now, I've used the [`afterEach()` function from Jest](https://jestjs.io/docs/en/api#aftereachfn-timeout) to run a function that resets the DOM instance we're testing with after each test. This way each unit test is isolated from each other.
 
 ```jsx
-import { render, cleanup, fireEvent } from "@testing-library/react";
+//import component to test
+import { EditValue } from "./EditValue";
+import {
+   render, //test renderer
+   cleanup, //resets the JSDOM
+   fireEvent //fires events on nodes
+} from "@testing-library/react";'
+
 describe("EditValue component", () => {
   afterEach(cleanup); //reset JSDOM after each test
-  it("Calls the onchange function", () => {
+  it("Calls the onChange function", () => {
     //put test here
   });
-  it("Has the right value", () => {
+  it("Passe the right value to onChange", () => {
     //put test here
   });
 });
 ```
 
-aaa
+#### Simulating A Change Event With React Testing Library
+
+In this test, we will render the component, as it is used in the app. We can deconstruct the function [getByLabelText](https://testing-library.com/docs/dom-testing-library/api-queries#bylabeltext) from the result of the render. We can use that to find the input the same way a user would -- by reading the label test. One hidden advantage of this is that all inputs have to have a label, which is required for the app to be accesible to screen readers.
 
 ```jsx
-const onChange = jest.fn();
-const { getByTestId } = render(
-  <EditValue
-    onChange={onChange}
-    value={""}
-    id={"input-test"}
-    className={"some-class"}
-  />
-);
-fireEvent.change(getByTestId("input-test"), {
-  target: { value: "New Value" }
+it("Calls the onChange function", () => {
+  //mock function to test with
+  const onChange = jest.fn();
+  //Render component and get back getByLabelText()
+  const { getByLabelText } = render(
+    <EditValue
+      onChange={onChange}
+      value={""}
+      className={"some-class"}
+      label={'Edit Value'}
+    />
+  );
+  //Get the input by label text
+  const input getByLabelText('Edit Value');
+  //Fire a change event on the input
+  fireEvent.change(input, {
+    target: { value: "New Value" }
+  });
+  //Was callback function called once?
+  expect(onChange).toHaveBeenCalledTimes(1);
 });
-expect(onChange).toHaveBeenCalledTimes(1);
 ```
 
-sdfsdfsdsdf
+In this test, we render the component and then find the input by label. At this point, if the component does not have the correct structure, those lines will error out. Then we use the input -- if it exists -- to fire a change event. The actuall assertions only run if all of that actually works. Beacuse we're using the component like an end user, the errors generated by running these lines should be useful in building or fixing our component.
+
+In this test, the assertion ensures that the callback is called once. If it's not called at all, that means the `onChange` callback is probably not bound properly. If it gets called more than once, that indicates a bug, probably a bad race condition.
+
+This test does **not** prove that the right value is passed to the `onChange` prop. I want to pass a string, not the event object:
 
 ```jsx
-const onChange = jest.fn();
-const { getByTestId } = render(
-  <EditValue
-    onChange={onChange}
-    value={""}
-    id={"input-test"}
-    className={"some-class"}
-  />
-);
-fireEvent.change(getByTestId("input-test"), {
-  target: { value: "New Value" }
+it("Passes the right value to onChange", () => {
+  const onChange = jest.fn();
+  const { getByLabelText } = render(
+    <EditValue
+      onChange={onChange}
+      value={""}
+      className={"some-class"}
+      label={'Edit Value'}
+    />
+  );
+  const input getByLabelText('Edit Value');
+  //Fire a change event on the input
+  fireEvent.change(input, {
+    target: { value: "New Value" }
+  });
+  //Was the new value -- not event object -- sent?
+  expect(onChange).toHaveBeenCalledWith("New Value");
 });
-expect(onChange).toHaveBeenCalledWith("New Value");
 ```
 
-### Snapshot Testing With React Testing Library
+This test is almost identical. One school of thaught says one assetrtion per unit, that way you know exactly what a failure indicates. This is following that rule. Beacuse the first argument of `it()` is a description of the test, it makes reading test results really nice.
+
+Also, it's a ton of code duplication. A less orthodox approach says test the interaction toghether. For integration or acceptance tests, I think that's super valid. For unit tests like this, I like this way. That is a very loosley held opionion.
+
+#### Snapshot Testing With React Testing Library
+
+We can also use React testing library for snapshot testing. It's very simple:
 
 ```jsx
-test("matches snapshot", () => {
+it("matches snapshot", () => {
   expect(
     render(
       <EditValue

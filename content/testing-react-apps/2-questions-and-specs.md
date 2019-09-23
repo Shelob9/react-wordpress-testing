@@ -1,6 +1,6 @@
 ---
 title: "Questions and Scopes"
-metaTitle: "Background"
+metaTitle: "What To Test In A React App?"
 metaDescription: "desc"
 ---
 
@@ -131,5 +131,5 @@ These tests answe the questions we asked about the intial state and the reaction
 ### Step 3: Write Failing Tests
 
 Now you will need to write tests that prove that your components do **not** work. These tests should pass when the components work.
-  
+
 Next section!
