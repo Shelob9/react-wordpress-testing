@@ -23,21 +23,21 @@ We need to write our own tests for other states of the app. In addition we want 
 
 ## How Do You Know If Your React App Works
 
-Automated tests let us know, if our code works as expected. More importantly, they become a part of the program. Changes to the app should be verifed to be "working" if all tests pass after making the change. Each [type of test](/testing-background/1-types) tells us something about our app.
+Automated tests let us know if our code works as expected. More importantly, they become a part of the program. Changes to the app should be verifed to be "working" if all tests pass after making the change. Each [type of test](/testing-background/1-types) tells us something about our app.
 
 ## Starting With Specifications
 
-You can transalate the specification for your app into tests. Writing tests first allows you to ensure that the specification is properly communicated to the engineer(s) buidling the app, feature or bug fix. In addition, GitHub, GitLab and other tools can tell you if your work is "done" or not.
+I like to start by transalating the specification for your app into tests. Writing tests first allows you to ensure that the specification is properly communicated to the engineer(s) buidling the app, feature or bug fix. In addition, GitHub, GitLab and other tools can tell you if your work is "done" or not.
 
 ### Spec For Example App
 
 Let's build a very basic app, with tests:
 
 Here is the spec:
-Create a one page app that:
 
-- The app must display a string, whose default value is "Hi Roy".
-- The app must have a form input to change that value.
+- A one page app that:
+  - Displays a string, whose default value is "Hi Roy".
+  - Has a form input to change that value.
 
 ### Test Specs
 

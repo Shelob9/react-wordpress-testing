@@ -4,7 +4,7 @@ metaTitle: "Writing Components"
 metaDescription: "Writing React components that already have tests when using the TDD methodology"
 ---
 
-In the first section, [we created empty components](http://localhost:8000/testing-react-apps/2-questions-and-specs#test-drivenreactdevelopment) for `<EditValue />` and `<DisplayValue />`. Then we wrote tests for them that showed how they should work. Currently these tests prove that the components \*do not work\*\*. Let's update the components so they do work.
+In the first section, [we created empty components](http://localhost:8000/testing-react-apps/2-questions-and-specs#test-drivenreactdevelopment) for `<EditValue />` and `<DisplayValue />`. Then we wrote tests for them that showed how they should work. Currently these tests prove that the components _do not work_. Let's update the components so they do work.
 
 ## Continuous Integration For React Apps
 

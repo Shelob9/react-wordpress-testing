@@ -4,7 +4,7 @@ metaTitle: "Unit Testing React"
 metaDescription: "Unit testing React apps with Jest, React Test Renderer and React Testing Library"
 ---
 
-Words before
+So far we have defined a specification for our app. We have empty components that could fullfill the requirement of that specification. Now we will write tests that our components will need to pass in order to prove they meet that specification.
 
 ## Unit Testing React Components With React Test Renderer
 
@@ -33,6 +33,8 @@ test("Component renders value", () => {
 FALSE. **That Is Testing React, Not Your Application**
 
 ### Snapshot Testing
+
+Instead of manually searching and testing every single prop. We can use snapshot tests.
 
 Snapshots acomplish two things:
 
@@ -162,7 +164,7 @@ it("Passes the right value to onChange", () => {
 
 This test is almost identical. One school of thaught says one assetrtion per unit, that way you know exactly what a failure indicates. This is following that rule. Beacuse the first argument of `it()` is a description of the test, it makes reading test results really nice.
 
-Also, it's a ton of code duplication. A less orthodox approach says test the interaction toghether. For integration or acceptance tests, I think that's super valid. For unit tests like this, I like this way. That is a very loosley held opionion.
+Also, it's a ton of code duplication. A less orthodox approach says test the interaction toghether. For integration or acceptance tests, I think that's super valid. For unit tests like this, I like this way. That is a very loosley held opinion.
 
 #### Snapshot Testing With React Testing Library
 
