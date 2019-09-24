@@ -6,8 +6,8 @@ const config = {
   },
   header: {
     logo:
-      "https://graphql-engine-cdn.hasura.io/learn-hasura/assets/homepage/favicon.png",
-    logoLink: "https://learn.hasura.io",
+      "https://en.wikipedia.org/wiki/Penrose_triangle#/media/File:Penrose_triangle_Drawing.svg",
+    logoLink: "/",
     title: "JavaScript Testing In And Around WordPress",
     githubUrl: "https://github.com/shelob9/react-testing-wordpress-book",
     helpUrl: "",
@@ -43,7 +43,8 @@ const config = {
     ogImage: null,
     docsLocation:
       "https://github.com/shelob9/react-testing-wordpress-book/tree/master/content",
-    favicon: "https://graphql-engine-cdn.hasura.io/img/hasura_icon_black.svg"
+    favicon:
+      "hhttps://en.wikipedia.org/wiki/Penrose_triangle#/media/File:Penrose_triangle_Drawing.svg"
   }
 };
 
