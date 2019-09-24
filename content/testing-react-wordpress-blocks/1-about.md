@@ -1,12 +1,15 @@
 ---
-title: "Types Of Tests"
-metaTitle: "Background"
+title: "Testing WordPress Blocks"
+metaTitle: "Testing WordPress Blocks"
 metaDescription: "desc"
 ---
 
-The following is a code block with JavaScript language syntax highlighting.
+The previous section of this course/ gitbook/ etc. introduced testing for React apps. WordPress' block editor is a React app. In general, we use the same tools to test, compile and lint blocks as any other React code -- Jest, Babel, webpack, etc.
 
-```javascript
-import React from 'react';
-```
+Setting up all of that in a WordPress project, historically was a pain. The new [`@wordpress/scripts`](https://developer.wordpress.org/block-editor/packages/packages-scripts/) abstracts away the complexity of using these tools with WordPress.
+
+Remember, everything you know about React testing applies to testing blocks.
+
+> [Example Code Part Two](https://github.com/Shelob9/testing-react-wordpress)
+
 

@@ -1,5 +1,5 @@
 ---
-title: "Writing Test Driven React Compnents"
+title: "Writing Test Driven React Components"
 metaTitle: "Writing Components"
 metaDescription: "Writing React components that already have tests when using the TDD methodology"
 ---
@@ -83,4 +83,3 @@ Now, all of the tests should pass, if all of the components work as expected and
 More importantly, you can worry less about regression errros. When you fix a bug, you should not worry about causing existing funcitonality to become bugy. TDD and test automation prevent that.
 
 Now that we have basic components, let's show how to reuse them in a WordPress block, including what to test.
-

@@ -18,5 +18,7 @@ It's important as you consume this material to know what assumptions I'm making 
   - The [React Getting Started Guide](https://reactjs.org/docs/getting-started.html).
   - [This section](https://fullstackopen.com/en/part2) of [The University of Helsinki's Free Intro Course on Modern JavaScript-based Web Development](https://fullstackopen.com/).
 - How to create a "Gutenberg" block in WordPress.
+  - If you're new to block development, I recommend following along with the [block tutorial](https://developer.wordpress.org/block-editor/tutorials/block-tutorial/) in the handbook and building some blocks.
+  - Also, [take at my slides and example code](https://github.com/Shelob9/block-worskshop) for my intro to block development workshop.
 - You can read the docs.
   - I am going to be covering a lot of tools. I'll show how to get started with them and expalin WHY you would use them. I trust that you can discover the little details and next steps from reading the docs and considering what your code needs.
