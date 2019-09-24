@@ -5,8 +5,7 @@ const config = {
     gaTrackingId: null
   },
   header: {
-    logo:
-      "https://en.wikipedia.org/wiki/Penrose_triangle#/media/File:Penrose_triangle_Drawing.svg",
+    logo: "https://placekitten.com/250/250",
     logoLink: "/",
     title: "JavaScript Testing In And Around WordPress",
     githubUrl: "https://github.com/shelob9/react-testing-wordpress-book",
@@ -39,12 +38,12 @@ const config = {
   },
   siteMetadata: {
     title: "JavaScript Testing In And Around WordPress | Josh Pollock",
-    description: "Documentation built with mdx. Powering learn.hasura.io ",
+    description:
+      "Learn how to develop test-driven React apps and WordPress blocks.",
     ogImage: null,
     docsLocation:
       "https://github.com/shelob9/react-testing-wordpress-book/tree/master/content",
-    favicon:
-      "hhttps://en.wikipedia.org/wiki/Penrose_triangle#/media/File:Penrose_triangle_Drawing.svg"
+    favicon: "https://placekitten.com/250/250"
   }
 };
 
