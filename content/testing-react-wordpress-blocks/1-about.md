@@ -11,5 +11,3 @@ Setting up all of that in a WordPress project, historically was a pain. The new 
 Remember, everything you know about React testing applies to testing blocks.
 
 > [Example Code Part Two](https://github.com/Shelob9/testing-react-wordpress)
-
-

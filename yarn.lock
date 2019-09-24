@@ -2098,6 +2098,13 @@ async-limiter@^1.0.0, async-limiter@~1.0.0:
   resolved "http://localhost:4873/async-limiter/-/async-limiter-1.0.1.tgz#dd379e94f0db8310b08291f9d64c3209766617fd"
   integrity sha512-csOlWGAcRFJaI6m+F2WKdnMKr4HhdhFVBk0H/QbJFMCr+uO2kwohwXQPxw/9OCxp05r5ghVBFSyioixx3gfkNQ==
 
+async-unist-util-visit@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npmjs.org/async-unist-util-visit/-/async-unist-util-visit-1.0.0.tgz#115c808ef2a5ac6695b691dbb731bbb0ca00e852"
+  integrity sha1-EVyAjvKlrGaVtpHbtzG7sMoA6FI=
+  dependencies:
+    run-async "2.2.0"
+
 async@1.5.2, async@^1.5.2:
   version "1.5.2"
   resolved "http://localhost:4873/async/-/async-1.5.2.tgz#ec6a61ae56480c0c3cb241c95618e20892f9672a"
@@ -6060,6 +6067,18 @@ gatsby-remark-copy-linked-files@^2.1.5:
     path-is-inside "^1.0.2"
     probe-image-size "^4.1.1"
     unist-util-visit "^1.4.1"
+
+gatsby-remark-embed-gist@^1.1.9:
+  version "1.1.9"
+  resolved "https://registry.npmjs.org/gatsby-remark-embed-gist/-/gatsby-remark-embed-gist-1.1.9.tgz#8c633de2df3105f7681fea8ec92bc62dc6f424d7"
+  integrity sha512-FCn2kymq/okNDYo/2ZUTt7XYOeJJL7jF0wzmo0AapbgX5IGy/eEnQ3xfQH3B3h+5B5nmUoDtsVmuCjrxSDN0vg==
+  dependencies:
+    "@babel/runtime" "^7.5.5"
+    async-unist-util-visit "^1.0.0"
+    cheerio "^1.0.0-rc.3"
+    parse-numeric-range "^0.0.2"
+    request "^2.88.0"
+    request-promise "^4.2.4"
 
 gatsby-remark-images@^3.1.11:
   version "3.1.23"
@@ -10105,6 +10124,11 @@ parse-latin@^4.0.0:
     unist-util-modify-children "^1.0.0"
     unist-util-visit-children "^1.0.0"
 
+parse-numeric-range@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.npmjs.org/parse-numeric-range/-/parse-numeric-range-0.0.2.tgz#b4f09d413c7adbcd987f6e9233c7b4b210c938e4"
+  integrity sha1-tPCdQTx6282Yf26SM8e0shDJOOQ=
+
 parse-passwd@^1.0.0:
   version "1.0.0"
   resolved "http://localhost:4873/parse-passwd/-/parse-passwd-1.0.0.tgz#6d5b934a456993b23d37f40a382d6f1666a8e5c6"
@@ -10918,7 +10942,7 @@ pseudomap@^1.0.1, pseudomap@^1.0.2:
   resolved "http://localhost:4873/pseudomap/-/pseudomap-1.0.2.tgz#f052a28da70e618917ef0a8ac34c1ae5a68286b3"
   integrity sha1-8FKijacOYYkX7wqKw0wa5aaChrM=
 
-psl@^1.1.24:
+psl@^1.1.24, psl@^1.1.28:
   version "1.4.0"
   resolved "http://localhost:4873/psl/-/psl-1.4.0.tgz#5dd26156cdb69fa1fdb8ab1991667d3f80ced7c2"
   integrity sha512-HZzqCGPecFLyoRj5HLfuDSKYTJkAfB5thKBIkRHtGjWwY7p1dAyveIbXIq4tO0KYfDF2tHqPUgY9SDnGm00uFw==
@@ -10970,7 +10994,7 @@ punycode@^1.2.4, punycode@^1.4.1:
   resolved "http://localhost:4873/punycode/-/punycode-1.4.1.tgz#c0d5a63b2718800ad8e1eb0fa5269c84dd41845e"
   integrity sha1-wNWmOycYgArY4esPpSachN1BhF4=
 
-punycode@^2.1.0:
+punycode@^2.1.0, punycode@^2.1.1:
   version "2.1.1"
   resolved "http://localhost:4873/punycode/-/punycode-2.1.1.tgz#b58b010ac40c22c5657616c8d2c2c02c7bf479ec"
   integrity sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A==
@@ -11675,7 +11699,24 @@ replace-ext@1.0.0, replace-ext@^1.0.0:
   resolved "http://localhost:4873/replace-ext/-/replace-ext-1.0.0.tgz#de63128373fcbf7c3ccfa4de5a480c45a67958eb"
   integrity sha1-3mMSg3P8v3w8z6TeWkgMRaZ5WOs=
 
-request@^2.83.0:
+request-promise-core@1.1.2:
+  version "1.1.2"
+  resolved "https://registry.npmjs.org/request-promise-core/-/request-promise-core-1.1.2.tgz#339f6aababcafdb31c799ff158700336301d3346"
+  integrity sha512-UHYyq1MO8GsefGEt7EprS8UrXsm1TxEvFUX1IMTuSLU2Rh7fTIdFtl8xD7JiEYiWU2dl+NYAjCTksTehQUxPag==
+  dependencies:
+    lodash "^4.17.11"
+
+request-promise@^4.2.4:
+  version "4.2.4"
+  resolved "https://registry.npmjs.org/request-promise/-/request-promise-4.2.4.tgz#1c5ed0d71441e38ad58c7ce4ea4ea5b06d54b310"
+  integrity sha512-8wgMrvE546PzbR5WbYxUQogUnUDfM0S7QIFZMID+J73vdFARkFy+HElj4T+MWYhpXwlLp0EQ8Zoj8xUA0he4Vg==
+  dependencies:
+    bluebird "^3.5.0"
+    request-promise-core "1.1.2"
+    stealthy-require "^1.1.1"
+    tough-cookie "^2.3.3"
+
+request@^2.83.0, request@^2.88.0:
   version "2.88.0"
   resolved "http://localhost:4873/request/-/request-2.88.0.tgz#9c2fca4f7d35b592efe57c7f0a55e81052124fef"
   integrity sha512-NAqBSrijGLZdM0WZNsInLJpkJokL72XYjUpnB0iwsRgxh7dB6COrHnTBNwN0E+lHDAJzu7kLAkDeY08z2/A0hg==
@@ -11839,6 +11880,14 @@ ripemd160@^2.0.0, ripemd160@^2.0.1:
   dependencies:
     hash-base "^3.0.0"
     inherits "^2.0.1"
+
+run-async@2.2.0:
+  version "2.2.0"
+  resolved "https://registry.npmjs.org/run-async/-/run-async-2.2.0.tgz#8783abd83c7bb86f41ee0602fc82404b3bd6e8b9"
+  integrity sha1-h4Or2Dx7uG9B7gYC/IJASzvW6Lk=
+  dependencies:
+    is-promise "^2.1.0"
+    pinkie-promise "^2.0.0"
 
 run-async@^2.2.0:
   version "2.3.0"
@@ -12608,6 +12657,11 @@ static-site-generator-webpack-plugin@^3.4.2:
   resolved "http://localhost:4873/statuses/-/statuses-1.5.0.tgz#161c7dac177659fd9811f43771fa99381478628c"
   integrity sha1-Fhx9rBd2Wf2YEfQ3cfqZOBR4Yow=
 
+stealthy-require@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.npmjs.org/stealthy-require/-/stealthy-require-1.1.1.tgz#35b09875b4ff49f26a777e509b3090a3226bf24b"
+  integrity sha1-NbCYdbT/SfJqd35QmzCQoyJr8ks=
+
 stream-browserify@^2.0.1:
   version "2.0.2"
   resolved "http://localhost:4873/stream-browserify/-/stream-browserify-2.0.2.tgz#87521d38a44aa7ee91ce1cd2a47df0cb49dd660b"
@@ -13206,6 +13260,14 @@ touch@^2.0.1:
   integrity sha512-qjNtvsFXTRq7IuMLweVgFxmEuQ6gLbRs2jQxL80TtZ31dEKWYIxRXquij6w6VimyDek5hD3PytljHmEtAs2u0A==
   dependencies:
     nopt "~1.0.10"
+
+tough-cookie@^2.3.3:
+  version "2.5.0"
+  resolved "https://registry.npmjs.org/tough-cookie/-/tough-cookie-2.5.0.tgz#cd9fb2a0aa1d5a12b473bd9fb96fa3dcff65ade2"
+  integrity sha512-nlLsUzgm1kfLXSXfRZMc1KLAugd4hqJHDTvc2hDIwS3mZAfMEuMbc03SujMF+GEcpaX/qboeycw6iO8JwVv2+g==
+  dependencies:
+    psl "^1.1.28"
+    punycode "^2.1.1"
 
 tough-cookie@~2.4.3:
   version "2.4.3"
