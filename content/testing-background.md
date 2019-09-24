@@ -4,13 +4,15 @@ metaTitle: "Types of Tests"
 metaDescription: "desc"
 ---
 
-## Does My Code Work?
+Before getting into the specifics of how to write JavaScript tests, it's helpful to know the categories of tests. No type of test is better than the other. Nor can any single type of test answer the main question we need to ask:
 
-How would I know? Tests, that's how.
+> Does my code work?
 
-Before we begin, I'll look at the different types of tests. Before getting into the specifics of how to write JavaScript tests, it's helpful to know the categories of tests. Seperating them by questions they answer helps you know why you should write that type of test, or not.
+- Does function or method work in isolation?
+- Do components connect toghether as expected?
+- Does a feature work as expected when used the way a user uses it?
 
-None of these types of tests are better or worse than the other. Each one has strengths and weakness and alone can not prove your application works. Knowing how to use them toghether to fully cover your app is more important than learning the specifics of how to write the tests.
+For each of these questions, you should have a test that proves the answer is yes. Each of these types of questions is answered with a different type of test. The distinction between test types is blurry. That's fine, I find that asking these questions helps me sort out what kinds of tests I need. Knowing how to use them toghether to fully cover your app is more important than learning the specifics of how to write the tests.
 
 ## Types Of Tests
 
