@@ -61,7 +61,7 @@ body {
 }
 
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
-  background-color: #542683;
+  background-color: #3D4852;
 }
 
 .headerWrapper {
@@ -159,7 +159,7 @@ body {
 
 /* Header section starts here */
 .navBarDefault {
-  background-color: #372476;
+  background-color: #3D4852;
   border-radius: 0;
   border-top: 0;
   margin-bottom: 0;
