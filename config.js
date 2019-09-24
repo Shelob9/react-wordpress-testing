@@ -27,6 +27,7 @@ const config = {
       "/testing-background",
       "/testing-react-apps",
       "/testing-react-wordpress-blocks",
+      "/next",
       "/about"
     ],
     links: [
