@@ -69,3 +69,24 @@ registerBlockType(name, {
 
 The edit and save callback are composed in separate files, importing components built for the app. They map WordPress' state to the existing components. In addition, they layout the component using the block editor's components.
 
+Let's add an empty edit callback function we can write tests around. At this point, we must consider which of the props we get from WordPress, does the child component actually need. We specifiy those as arguments and leave the rest blank at this point.
+
+```jsx
+//src/components/Editor.js
+import React, { Fragment } from "react";
+
+export const Editor = ({ attributes, setAttributes, className, clientId }) => {
+  return <Fragment />;
+};
+```
+
+The save callback just needs the saved attribute and class name:
+
+```jsx
+import React from "react";
+export const Save = ({ attributes, className }) => {
+  return <React.Fragment />;
+};
+```
+
+Go ahead and commit those components and then we can start writing tests for them.  
