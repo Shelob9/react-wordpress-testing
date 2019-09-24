@@ -10,7 +10,7 @@ Just like last time, we'll start by defining the project's scope and what questi
 
 ### Spec For Block
 
-What we will be building is a a block for showing some text. This could be an alert block, or special call to action block, depending on what you want to do. First, let's create a blcok with these specs:
+What we will be building is a a block for showing some text. This could be an alert block, or special call to action block, depending on what you want to do. First, let's create a block with these specs:
 
 - The components for the app should be reused.
 - The block preview and rendered content should be identical.
@@ -36,9 +36,9 @@ Testing works the same for Gutenberg blocks as other React apps. We are using Je
 
 A block can get pretty complex, and it's tempting to do all of that in the file that registers the block. I think that any business logic besides block registration should be seperated into different files. The file that builds the block to do nothing but build the block.
 
-The file that builds the block should have the single responsiblity of mapping WordPress editor APIs, such as state management, to the existing components. This needs to happen in the edit _and_ save callback. That's two more responsibiliteis, so two more files --one for edit and save callback.
-
 ### The Block
+
+The file that builds the block should have the single responsiblity of mapping WordPress editor APIs, such as state management, to the existing components. This needs to happen in the edit _and_ save callback. That's two more responsibiliteis, so two more files --one for edit and save callback.
 
 ```jsx
 //Import Blocks API
@@ -89,4 +89,4 @@ export const Save = ({ attributes, className }) => {
 };
 ```
 
-Go ahead and commit those components and then we can start writing tests for them.  
+Go ahead and commit those components and then we can start writing tests for them.

@@ -8,8 +8,6 @@ metaDescription: "desc"
 
 In the first part, I'll show you how to test a React app. The app itself is super basic, and has a single feature. React is atomic. You can use this mini-app or its components in a larger app. For example a WordPress block. That's part two, I'll show how to use re-usable React components in a WordPress block.
 
-Also, I have background on testing in React and
-
 ## Assumptions About You
 
 It's important as you consume this material to know what assumptions I'm making about you.

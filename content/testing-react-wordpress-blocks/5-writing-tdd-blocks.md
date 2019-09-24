@@ -116,7 +116,7 @@ This is based on [WordPress core's e2e tests](https://github.com/WordPress/wordp
 
 Create a directory called `e2e`. That is where e2e tests will go.
 
-### Test That Block Works
+### Test That The Block Works
 
 In the directory `e2e` try adding one test file. We are still using Jest as the test runner, so everything you learned about writing tests still applies, we just have new tools.
 
