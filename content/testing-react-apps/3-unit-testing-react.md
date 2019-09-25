@@ -162,7 +162,7 @@ it("Passes the right value to onChange", () => {
 });
 ```
 
-This test is almost identical. One school of thaught says one assetrtion per unit, that way you know exactly what a failure indicates. This is following that rule. Beacuse the first argument of `it()` is a description of the test, it makes reading test results really nice.
+This test is almost identical. One school of thought says one assertion per unit, that way you know exactly what a failure indicates. This is following that rule. Beacuse the first argument of `it()` is a description of the test, it makes reading test results really nice.
 
 Also, it's a ton of code duplication. A less orthodox approach says test the interaction toghether. For integration or acceptance tests, I think that's super valid. For unit tests like this, I like this way. That is a very loosley held opinion.
 
