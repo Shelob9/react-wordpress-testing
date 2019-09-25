@@ -69,7 +69,7 @@ Our `<EditValue />` component will be provided a value and a function that fires
 
 ### Testing React Events
 
-We could use React Test Render's `act()` function for these tests. Instead, we'll use a higher-level tool tool that takes away most of the complexity of interacting with rendered React components. We'll use [React Testing Library](https://testing-library.com/docs/react-testing-library/intro). Testing Library's React implimentation allows us to select nodes from the rendered app, like a user would, and make assertions about them or take actions, such as fireing change events, with them.
+We could use React Test Render's `act()` function for these tests. Instead, we'll use a higher-level tool that takes away most of the complexity of interacting with rendered React components. We'll use [React Testing Library](https://testing-library.com/docs/react-testing-library/intro). Testing Library's React implimentation allows us to select nodes from the rendered app, like a user would, and make assertions about them or take actions, such as fireing change events, with them.
 
 #### Install React Testing Library
 
