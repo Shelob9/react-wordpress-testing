@@ -79,7 +79,7 @@ yarn add @testing-library/react
 
 #### Testing Change Events With React Testing Library
 
-We can [use React Testing Libraray to test change events](https://github.com/testing-library/testing-library-docs/pull/138#issuecomment-499571797) in the `<EditValue />` component. In these tests, instead of passing a real change handler, we will use [Jest's mock](https://jestjs.io/docs/en/mock-functions) function instead.
+We can [use React Testing Library to test change events](https://github.com/testing-library/testing-library-docs/pull/138#issuecomment-499571797) in the `<EditValue />` component. In these tests, instead of passing a real change handler, we will use [Jest's mock](https://jestjs.io/docs/en/mock-functions) function instead.
 
 [`jest.fn()`](https://jestjs.io/docs/en/mock-functions) are useful helpers for testing if the component interacted with the onChange function correctly. Like all mocks, they help isolate components during unit testing. Later in integration tests, we will make sure that the real onChange function behaves accordingly. Using Jest's mock utility, we [can learn about how the function was called](https://jestjs.io/docs/en/mock-functions#mock-property). That's what our unit test is concerned with -- how the unit being tested uses the callback. We are not concerned with what the callback does in this test. That's a seperate unit of functionality.
 
