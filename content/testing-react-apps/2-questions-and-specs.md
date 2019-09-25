@@ -114,7 +114,7 @@ This syntax is pretty declarative, and it does not reflect how the program is us
 
 #### BDD Style
 
-For the edit component, let's use BDD syntax to describe how the program is used. Create `src/components/EditValue.test.js`. I'm skipping the imports here, they are the same as before, with a diffent component being imported.
+For the edit component, let's use Behavior-Driven Development (BDD) syntax to describe how the program is used. Create `src/components/EditValue.test.js`. I'm skipping the imports here, they are the same as before, with a diffent component being imported.
 
 Notice that we use `describe()` to group our tests, and `it()` to describe what it -- our component -- does:
 
