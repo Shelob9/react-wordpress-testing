@@ -125,7 +125,7 @@ it("Calls the onChange function", () => {
     />
   );
   //Get the input by label text
-  const input getByLabelText('Edit Value');
+  const input = getByLabelText('Edit Value');
   //Fire a change event on the input
   fireEvent.change(input, {
     target: { value: "New Value" }
@@ -152,7 +152,7 @@ it("Passes the right value to onChange", () => {
       label={'Edit Value'}
     />
   );
-  const input getByLabelText('Edit Value');
+  const input = getByLabelText('Edit Value');
   //Fire a change event on the input
   fireEvent.change(input, {
     target: { value: "New Value" }
