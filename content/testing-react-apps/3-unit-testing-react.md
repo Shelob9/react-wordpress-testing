@@ -189,5 +189,5 @@ it("matches snapshot", () => {
 
 So far we have tests, but not components. In the tests, we're assuming props these components do not have. That's intentional. The tests show how the component will have to work. The tests are showing us how the components should work. We're learning how to write the components from the tests. That's a [SOLID](https://stackoverflow.com/a/584732/1469799) strategy.
 
-We can not be sure that the props are correct until we see how the components integrate toghether. Integration tests, which use the same tools as unit tests, in different ways are next.
+We can not be sure that the props are correct until we see how the components integrate toghether. Integration tests, which use the same tools as unit tests in different ways, are next.
 
