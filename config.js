@@ -1,3 +1,5 @@
+const favicon =
+  "https://rawcdn.githack.com/Shelob9/react-wordpress-testing/c85f38745d862f5f9d14792c4f52881a4568cdfd/triangle-trans.png";
 const config = {
   gatsby: {
     pathPrefix: "/react-wordpress-testing",
@@ -5,7 +7,7 @@ const config = {
     gaTrackingId: null
   },
   header: {
-    logo: "https://placekitten.com/250/250",
+    logo: favicon,
     logoLink: "/",
     title: "JavaScript Testing In And Around WordPress",
     githubUrl: "https://github.com/shelob9/react-wordpress-testing",
@@ -43,7 +45,7 @@ const config = {
     ogImage: null,
     docsLocation:
       "https://github.com/shelob9/react-wordpress-testing/tree/master/content",
-    favicon: "https://placekitten.com/250/250"
+    favicon
   }
 };
 

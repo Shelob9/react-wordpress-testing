@@ -28,7 +28,7 @@ This page also includes an example of accessibility testing. I need to expand on
 
 - In depth on e2e testing.
 - Accesibility testing for React apps.
-- Block development basics. Probably its own site/ gitbook/ etc.
+- Block development basics. Probably its own site.
 
 ## Testing React Apps For Accesibility Errors
 

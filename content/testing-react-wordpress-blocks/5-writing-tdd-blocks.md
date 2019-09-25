@@ -67,13 +67,13 @@ If these tests pass, we know that the componets should work together.
 
 Now that we know that our components work correctly, we need to make sure our plugin can be activated and used to add our block to the post editor. We do this by creating a WordPress site, automating the process of clicking the buttons to do that and asserting that the end result is as expected.
 
-End to end testing for WordPress blocks should get a full section of this course/ gitbook/ whatever later. It's a huge topic, I'll rush through it here.
+End to end testing for WordPress blocks should get a full section of this site later. It's a huge topic, I'll rush through it here to get you started.
 
 When we right these test, we assume that all of the components work. These tests are the most like how a user would use the plugin.
 
 ### Useing Puppetter To Automate Chrome
 
-This test tool uses headless Chrome, and is controlled using [puppetter](https://github.com/GoogleChrome/puppeteer).
+This test tool uses headless Chrome, and is controlled using [puppetter](https://github.com/GoogleChrome/puppeteer). The WordPress e2e test tools are a wrapper over Puppeteer. So, if you're not sure about how it works, check the [Puppetter docs](https://pptr.dev/).
 
 Easiest if you have WordPress running locally in Docker [like core does](https://github.com/WordPress/wordpress-develop/tree/master/tools/local-env)
 
