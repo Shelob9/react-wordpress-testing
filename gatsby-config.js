@@ -32,11 +32,7 @@ const plugins = [
   {
     resolve: "gatsby-transformer-remark",
     options: {
-      plugins: [
-        {
-          resolve: "gatsby-remark-embed-gist"
-        }
-      ]
+      plugins: [`gatsby-remark-reading-time`, `gatsby-remark-embed-gist`]
     }
   },
   "gatsby-plugin-emotion",

@@ -31,6 +31,7 @@
     "gatsby-remark-copy-linked-files": "^2.1.5",
     "gatsby-remark-embed-gist": "^1.1.9",
     "gatsby-remark-images": "^3.1.11",
+    "gatsby-remark-reading-time": "^1.0.1",
     "gatsby-source-filesystem": "^2.1.9",
     "gatsby-transformer-remark": "^2.6.14",
     "graphql": "^14.4.2",
@@ -53,10 +54,12 @@
   "main": "n/a",
   "scripts": {
     "start": "gatsby develop",
-    "build": "gatsby build --prefix-paths"
+    "build": "gatsby build --prefix-paths",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "devDependencies": {
     "gatsby-plugin-remove-trailing-slashes": "^2.1.2",
+    "gh-pages": "^2.1.1",
     "prism-react-renderer": "^0.1.7"
   }
 }

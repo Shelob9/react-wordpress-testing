@@ -1,14 +1,14 @@
 const config = {
   gatsby: {
-    pathPrefix: "/",
-    siteUrl: "https://wpreacttesting.io",
+    pathPrefix: "/react-wordpress-testing",
+    siteUrl: "https://shelob9.github.io/react-wordpress-testing",
     gaTrackingId: null
   },
   header: {
     logo: "https://placekitten.com/250/250",
     logoLink: "/",
     title: "JavaScript Testing In And Around WordPress",
-    githubUrl: "https://github.com/shelob9/react-testing-wordpress-book",
+    githubUrl: "https://github.com/shelob9/react-wordpress-testing",
     helpUrl: "",
     tweetText: "",
     links: [{ text: "", link: "" }],
@@ -42,7 +42,7 @@ const config = {
       "Learn how to develop test-driven React apps and WordPress blocks.",
     ogImage: null,
     docsLocation:
-      "https://github.com/shelob9/react-testing-wordpress-book/tree/master/content",
+      "https://github.com/shelob9/react-wordpress-testing/tree/master/content",
     favicon: "https://placekitten.com/250/250"
   }
 };
