@@ -41,9 +41,9 @@ Here is the spec:
 
 ### Test Specs
 
-Know that we know the specification for the app, we can start thinking about questions we want to answer.
+Now that we know the specification for the app, we can start thinking about questions we want to answer.
 
-First, I want to know that my React components work, in isolation as expected. I'll answer these questions with unit tests. In order to test in isolation. I'll need a `<DisplayValue />` component that has the responsibiity to display the current value. I'll also need an `<Edit />` component to manage the input for modifying the value.
+First, I want to know that my React components work, in isolation as expected. I'll answer these questions with unit tests. In order to test in isolation, I'll need a `<DisplayValue />` component that has the responsibiity to display the current value. I'll also need an `<Edit />` component to manage the input for modifying the value.
 
 My unit tests will answer these questions:
 
@@ -55,11 +55,11 @@ If those tests pass, it will NOT prove that the components work toghether. Those
 
 - Does the display value change with the input?
 
-Now we have the test spec and the application spec. BTW the testing spec is almost in BDD language. Forcing these specs into the [cucumber.js](https://cucumber.io/docs)] or similar syntax might be useful for acceptance testing.
+Now we have the test spec and the application spec. BTW the testing spec is almost in BDD language. Forcing these specs into the [cucumber.js](https://cucumber.io/docs) or similar syntax might be useful for acceptance testing.
 
 ## Test-Driven React Development
 
-Know that we know what questions we need to answer and what the basic components are, we'll create the tests.
+Now that we know what questions we need to answer and what the basic components are, we'll create the tests.
 
 ### Step One: Incomplete Components
 
