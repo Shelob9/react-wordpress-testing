@@ -152,8 +152,6 @@ export default class MDXRuntimeTest extends Component {
         </Helmet>
         <div className={"titleWrapper"}>
           <h1 className={"title"}>{mdx.fields.title}</h1>
-          <ReadingTime slug={mdx.fields.slug} />
-          <p>{JSON.stringify(mdx)}</p>
           <Edit className={"mobileView"}>
             <Link
               className={"gitBtn"}
