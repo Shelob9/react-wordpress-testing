@@ -39,7 +39,7 @@ Instead of manually searching and testing every single prop. We can use snapshot
 Snapshots acomplish two things:
 
 - Make sure your props went to the right places.
-- Force your to **commit** to changes.
+- Force you to **commit** to changes.
 
 Snapshot tests render components to JSON and store that JSON representation in the file system. If a future test run produces a different JSON string, the test fails.
 
