@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url> <loc>https://shelob9.github.io/react-wordpress-testing/react-wordpress-testing/about</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://shelob9.github.io/react-wordpress-testing/react-wordpress-testing/next</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://shelob9.github.io/react-wordpress-testing/react-wordpress-testing/introduction</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://shelob9.github.io/react-wordpress-testing/react-wordpress-testing/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://shelob9.github.io/react-wordpress-testing/react-wordpress-testing/testing-react-apps</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://shelob9.github.io/react-wordpress-testing/react-wordpress-testing/testing-react-apps/5-writing-tdd-react-components</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://shelob9.github.io/react-wordpress-testing/react-wordpress-testing/testing-react-wordpress-blocks</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://shelob9.github.io/react-wordpress-testing/react-wordpress-testing/testing-background</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://shelob9.github.io/react-wordpress-testing/react-wordpress-testing/testing-react-wordpress-blocks/2-setting-up</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://shelob9.github.io/react-wordpress-testing/react-wordpress-testing/testing-react-apps/4-integration-testing-react-apps</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://shelob9.github.io/react-wordpress-testing/react-wordpress-testing/testing-react-wordpress-blocks/3-structure</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://shelob9.github.io/react-wordpress-testing/react-wordpress-testing/testing-background/2-unit-tests</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://shelob9.github.io/react-wordpress-testing/react-wordpress-testing/testing-react-wordpress-blocks/4-writing-block-tests</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://shelob9.github.io/react-wordpress-testing/react-wordpress-testing/testing-react-apps/2-questions-and-specs</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://shelob9.github.io/react-wordpress-testing/react-wordpress-testing/testing-background/3-integration-tests</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://shelob9.github.io/react-wordpress-testing/react-wordpress-testing/testing-background/4-acceptance-tests</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://shelob9.github.io/react-wordpress-testing/react-wordpress-testing/testing-react-wordpress-blocks/5-writing-tdd-blocks</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://shelob9.github.io/react-wordpress-testing/react-wordpress-testing/testing-react-apps/3-unit-testing-react</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://shelob9.github.io/react-wordpress-testing/about</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://shelob9.github.io/react-wordpress-testing/next</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://shelob9.github.io/react-wordpress-testing/introduction</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://shelob9.github.io/react-wordpress-testing/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://shelob9.github.io/react-wordpress-testing/testing-react-apps</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://shelob9.github.io/react-wordpress-testing/testing-react-apps/5-writing-tdd-react-components</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://shelob9.github.io/react-wordpress-testing/testing-react-wordpress-blocks</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://shelob9.github.io/react-wordpress-testing/testing-background</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://shelob9.github.io/react-wordpress-testing/testing-react-wordpress-blocks/2-setting-up</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://shelob9.github.io/react-wordpress-testing/testing-react-apps/4-integration-testing-react-apps</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://shelob9.github.io/react-wordpress-testing/testing-react-wordpress-blocks/3-structure</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://shelob9.github.io/react-wordpress-testing/testing-background/2-unit-tests</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://shelob9.github.io/react-wordpress-testing/testing-react-wordpress-blocks/4-writing-block-tests</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://shelob9.github.io/react-wordpress-testing/testing-react-apps/2-questions-and-specs</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://shelob9.github.io/react-wordpress-testing/testing-background/3-integration-tests</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://shelob9.github.io/react-wordpress-testing/testing-background/4-acceptance-tests</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://shelob9.github.io/react-wordpress-testing/testing-react-wordpress-blocks/5-writing-tdd-blocks</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://shelob9.github.io/react-wordpress-testing/testing-react-apps/3-unit-testing-react</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>
