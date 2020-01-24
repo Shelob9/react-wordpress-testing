@@ -11,13 +11,13 @@ Now that we have a block plugin, with the begining of components, let's write so
 Let's start with the save callback, this one is pretty simple, there are no interactions to test. A snapshot test will do. Be careful though, this snapshot test will pass without building out the component. Other tests will cover that it has the right structure.
 
 ```jsx
-//src/components/Save.test.ks
+//src/components/Save.test.js
 import {Save} from './save';
 import {
    render, //test renderer
    cleanup, //resets the JSDOM
    fireEvent //fires events on nodes
-} from "@testing-library/react";'
+} from "@testing-library/react";
 
 describe("Save componet", () => {
   afterEach(cleanup);
