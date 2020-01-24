@@ -28,7 +28,7 @@ In additition, we can use the WordPress e2e test suite, which is included to act
 
 Testing works the same for Gutenberg blocks as other React apps. We are using Jest as the runner, and we can use same test renderers. Let's go ahead and install the renderers we used last time in our plugin:
 
-`yarn add @testing-libray/react`
+`yarn add @testing-library/react`
 
 `yarn add react-test-renderer`
 
