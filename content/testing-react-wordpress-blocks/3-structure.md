@@ -1,6 +1,6 @@
 ---
 metaTitle: "Structuring  WordPress Plugin For Testablity"
-title: "Structuring  WordRress Plugin For Testablity"
+title: "Structuring  WordPress Plugin For Testablity"
 metaDescription: ""
 ---
 
