@@ -61,7 +61,7 @@ For this component, we need to make sure that
 the provided value of `attributes.value` is passed to the input. More importanly, when the input changes, we need to make sure that that `setAttributes()` gets that value.
 
 Remember that `setAttributes()` has the same API as
-`React.setState()`. Also, we can mock it like any other funciton. How it works does not matter to us. What matters is how we work with it.
+`React.setState()`. Also, we can mock it like any other function. How it works does not matter to us. What matters is how we work with it.
 
 This test is going to be very similar to the one for the `<EditValue>` component. We render the interface, we check the value, we fire a change event on the input and then we check that `setAttributes()` was called once, with the right value.
 
