@@ -104,7 +104,7 @@ describe("Editor componet", () => {
     const setAttributes = jest.fn();
 
     //render component
-    const {getByLabel} = render(
+    const {getByLabelText} = render(
       <Editor
         {...{
           attributes,
@@ -116,7 +116,7 @@ describe("Editor componet", () => {
     );
 
     //Get the input by label text
-    const input getByLabelText('Edit Value');
+    const input = getByLabelText('Edit Value');
     //Fire a change event on the input
     fireEvent.change(input, {
       target: { value: "New Value" }
