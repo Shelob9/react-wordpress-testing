@@ -1,6 +1,6 @@
 ---
-metaTitle: "Structuring  WordPress Plugin For Testablity"
-title: "Structuring  WordRress Plugin For Testablity"
+metaTitle: "Structuring WordPress Plugin For Testability"
+title: "Structuring WordPress Plugin For Testability"
 metaDescription: ""
 ---
 
@@ -16,13 +16,13 @@ What we will be building is a a block for showing some text. This could be an al
 - The block preview and rendered content should be identical.
 - The control for the value should appear in the block’s inspector controls.
 
-Once that foundation exists and has good test coverage, you can safely itterate on the code to make the block unique to your needs.
+Once that foundation exists and has good test coverage, you can safely iterate on the code to make the block unique to your needs.
 
 ### Tests For Gutenberg Blocks
 
-Beacuse this block will re-use the same components, we do not need to unti test those components. All of the tests we are doing are to ensure that those components work with Gutenberg properly. While small unit tests for functions created to help this process may be useful, for the most part, we want to use integration tests.
+Beacuse this block will re-use the same components, we do not need to unit test those components. All of the tests we are doing are to ensure that those components work with Gutenberg properly. While small unit tests for functions created to help this process may be useful, for the most part, we want to use integration tests.
 
-In additition, we can use the WordPress e2e test suite, which is included to activate the plugin, add the block and make sure the block is added. That would be our acceptance test, showing that not only do the componentes work toghether, that the final product -- the block functions as expected.
+In addition, we can use the WordPress e2e test suite, which is included to activate the plugin, add the block and make sure the block is added. That would be our acceptance test, showing that not only do the componentes work toghether, that the final product -- the block functions as expected.
 
 ### Jest Is The Test Runner
 
@@ -38,7 +38,7 @@ A block can get pretty complex, and it's tempting to do all of that in the file 
 
 ### The Block
 
-The file that builds the block should have the single responsiblity of mapping WordPress editor APIs, such as state management, to the existing components. This needs to happen in the edit _and_ save callback. That's two more responsibiliteis, so two more files --one for edit and save callback.
+The file that builds the block should have the single responsiblity of mapping WordPress editor APIs, such as state management, to the existing components. This needs to happen in the edit _and_ save callback. That's two more responsibilities, so two more files -- one for edit and save callback.
 
 ```jsx
 //Import Blocks API
